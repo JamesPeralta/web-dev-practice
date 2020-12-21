@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #FDB927;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#main-content {
+  border-width: 3px;
+  border-color: #006bb6;
+  border-style: solid;
+  width: 600px;
+}
+
+#player-name {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #006bb6;
+}
+
+h4 {
+  margin-top: 5px;
+}
+
+#statistics {
+  display: flex;
+  justify-content: center;
+}
+
+#career-label {
+  margin-bottom: 0px;
+}
+
+ul {
+  margin-top: 8px;
+  list-style-type: none;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
