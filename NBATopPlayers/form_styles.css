@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+#main-modal {
+    border-color: black;
+    border-width: medium;
+    border-style: solid;
+    width: 600px;
+}
+
+#lamelolabel {
+    text-align: center;
+}
+
+#check_boxes {
+    display: flex;
+    flex-direction: column;
+}
+
+#awardsLabel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#skillsLabel {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#nameDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+#rangeInputs {
+    display: flex;
+    flex-direction: column;
+}
