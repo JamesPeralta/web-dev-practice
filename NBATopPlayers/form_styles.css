@@ -2,13 +2,14 @@ body {
     display: flex;
     justify-content: center;
     font-family: 'Poppins', sans-serif;
-    background: #00788C;
+    background-image: url("background.png");
 }
 
 #main-modal {
+    border-radius: 25px;
     border-color: black;
     border-width: medium;
-    background: #1D1160;
+    background: #1D116090;
     width: 800px;
     color: white;
 }
