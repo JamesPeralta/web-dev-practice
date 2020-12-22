@@ -9,51 +9,73 @@
     <div id="main-modal">
         <h1 id="lamelolabel">What are your thoughts on LaMelo Ball?</h1>
         <form>
-            <div id="nameDiv">
-                <label for="name">Name</label>
-                <input id="name" type="text">
-            </div>
-            <div id="check_boxes">
-                <p id="awardsLabel">Which awards will LaMelo win? (Check all that apply)</p>
-                <label for="mvp">
-                    Most Valuable Player
-                    <input type="checkbox" id="mvp">
-                </label>
-                <label for="roty">
-                    Rookie of the Year
-                    <input type="checkbox" id="roty">
-                </label>
-                <label for="dpoy">
-                    Defensive Player of the Year
-                    <input type="checkbox" id="dpoy">
-                </label>
-                <label for="scoring">
-                    Scoring Champion
-                    <input type="checkbox" id="scoring">
-                </label>
-            </div>
-            <div id="rangeInputs">
-                <p id="skillsLabel">Please rate LaMelo's skills.</p>
-                <label for="3PT">3PT</label>
-                <input type="range" id="3PT">
-
-                <label for="middy">Mid Range</label>
-                <input type="range" id="middy">
-
-                <label for="layups">Layups</label>
-                <input type="range" id="layups">
-
-                <label for="post">Post</label>
-                <input type="range" id="post">
-
-                <label for="dunks">Dunks</label>
-                <input type="range" id="dunks">
-
-                <label for="passing">Passing</label>
-                <input type="range" id="passing">
-
-                <label for="defence">Defense</label>
-                <input type="range" id="defence">
+            <div id="inputs">
+                <p class="sectionLabels">Basic Information</p>
+                <div id="nameDiv">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" placeholder="Enter your name">
+                </div>
+                <p class="sectionLabels">Which awards will LaMelo win? (Check all that apply)</p>
+                <div id="check_boxes">
+                    <div>
+                        <input type="checkbox" id="mvp">
+                        <label for="mvp">Most Valuable Player</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="roty">
+                        <label for="roty">Rookie of the Year</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="dpoy">
+                        <label for="dpoy">Defensive Player of the Year</label></div>
+                    <div>
+                        <input type="checkbox" id="scoring">
+                        <label for="scoring">Scoring Champion</label>
+                    </div>
+                </div>
+                <p class="sectionLabels">Please rate LaMelo's skills.</p>
+                <div id="rangeInputs">
+                    <div class="rangeDive">
+                        <label for="3PT">3PT</label>
+                        <input type="range" id="3PT">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="middy">Mid Range</label>
+                        <input type="range" id="middy">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="layups">Layups</label>
+                        <input type="range" id="layups">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="post">Post</label>
+                        <input type="range" id="post">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="dunks">Dunks</label>
+                        <input type="range" id="dunks">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="passing">Passing</label>
+                        <input type="range" id="passing">
+                        <p>100</p>
+                    </div>
+                    <div class="rangeDive">
+                        <label for="defence">Defense</label>
+                        <input type="range" id="defence">
+                        <p>100</p>
+                    </div>
+                </div>
+                <p class="sectionLabels">Any additional comments?</p>
+                <div>
+                    <textarea id="review" name="w3review" rows="4" cols="50"></textarea>
+                </div>
+                <button type="button">Submit</button>
             </div>
         </form>
     </div>

@@ -1,17 +1,33 @@
 body {
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    background: #00788C;
 }
 
 #main-modal {
     border-color: black;
     border-width: medium;
-    border-style: solid;
-    width: 600px;
+    background: #1D1160;
+    width: 800px;
+    color: white;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputs {
+    width: 70%;
 }
 
 #lamelolabel {
     text-align: center;
+    font-size: 30px;
+    margin-bottom:0.25rem;
 }
 
 #check_boxes {
@@ -19,22 +35,74 @@ body {
     flex-direction: column;
 }
 
-#awardsLabel {
-    margin-top: 10px;
-    margin-bottom: 5px;
+#check_boxes{
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-#skillsLabel {
+.sectionLabels {
+    font-size: 1.3rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    margin-left: 0.30rem;
 }
 
 #nameDiv {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
 }
+
 
 #rangeInputs {
     display: flex;
     flex-direction: column;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    width: 85%;
+}
+
+#rangeInputs input {
+    width: 60%;
+}
+
+#rangeInputs div {
+    display: flex;
+    justify-content: space-between;
+}
+
+#rangeInputs div p{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.slider {
+    width: 100%;
+}
+
+#review {
+    width: 90%;
+    height: 6rem;
+    resize: none;
+    margin-bottom: 2rem;
+}
+
+.rangeDive {
+    margin: 1px;
+}
+
+.rangeDive label {
+    width: 20%;
+}
+
+button {
+    width: 90%;
+    height: 3rem;
+    cursor: pointer;
+    background: green;
+    margin-bottom: 2rem;
+    color: white;
 }
