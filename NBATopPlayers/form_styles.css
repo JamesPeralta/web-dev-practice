@@ -99,6 +99,10 @@ form {
     width: 20%;
 }
 
+.rangeDive p {
+    width: 5%;
+}
+
 button {
     width: 90%;
     height: 3rem;

@@ -37,38 +37,38 @@
                 <div id="rangeInputs">
                     <div class="rangeDive">
                         <label for="3PT">3PT</label>
-                        <input type="range" id="3PT">
-                        <p>100</p>
+                        <input class="slider" type="range" id="3PT" data-val="3PTLabel" data-yooo="Hello">
+                        <p id="3PTLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="middy">Mid Range</label>
-                        <input type="range" id="middy">
-                        <p>100</p>
+                        <input class="slider" type="range" id="middy" data-val="middyLabel">
+                        <p id="middyLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="layups">Layups</label>
-                        <input type="range" id="layups">
-                        <p>100</p>
+                        <input class="slider" type="range" id="layups" data-val="layupLabel">
+                        <p id="layupLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="post">Post</label>
-                        <input type="range" id="post">
-                        <p>100</p>
+                        <input class="slider" type="range" id="post" data-val="postLabel">
+                        <p id="postLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="dunks">Dunks</label>
-                        <input type="range" id="dunks">
-                        <p>100</p>
+                        <input class="slider" type="range" id="dunks" data-val="dunksLabel">
+                        <p id="dunksLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="passing">Passing</label>
-                        <input type="range" id="passing">
-                        <p>100</p>
+                        <input class="slider" type="range" id="passing" data-val="passingLabel">
+                        <p id="passingLabel">50</p>
                     </div>
                     <div class="rangeDive">
                         <label for="defence">Defense</label>
-                        <input type="range" id="defence">
-                        <p>100</p>
+                        <input class="slider" type="range" id="defence" data-val="defenceLabel">
+                        <p id="defenceLabel">50</p>
                     </div>
                 </div>
                 <p class="sectionLabels">Any additional comments?</p>
@@ -79,5 +79,9 @@
             </div>
         </form>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script src="form_logic.js"></script>
     </body>
 </html>
