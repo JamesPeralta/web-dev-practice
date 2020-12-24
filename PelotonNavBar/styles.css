@@ -1,0 +1,53 @@
+body {
+    margin: 0px;
+}
+
+nav {
+    display: flex;
+    background: black;
+    margin: 0;
+    justify-content: space-between;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+nav h1 {
+    margin: 0;
+}
+
+nav img {
+    width: 130px;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#products li {
+    color: white;
+    height: 100%;
+    margin-right: 25px;
+}
+
+#products li:nth-child(6) {
+    margin-right: 0px;
+}
+
+#other li button {
+    height: 100%;
+    border-style: none;
+    background: transparent;
+    width: 60px;
+}
+
+#other li button img{
+    width: 27px;
+}
+
+#other li:nth-child(3) {
+    margin-right: 25px;
+}
