@@ -18,6 +18,7 @@ nav h1 {
 
 nav img {
     width: 130px;
+    cursor: pointer;
 }
 
 nav ul {
@@ -33,6 +34,10 @@ nav ul {
     margin-right: 25px;
 }
 
+#products li:hover{
+    cursor: pointer;
+}
+
 #products li:nth-child(6) {
     margin-right: 0px;
 }
@@ -42,6 +47,8 @@ nav ul {
     border-style: none;
     background: transparent;
     width: 60px;
+    outline: none;
+    cursor: pointer;
 }
 
 #other li button img{
