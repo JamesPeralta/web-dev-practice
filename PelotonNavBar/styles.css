@@ -2,6 +2,7 @@ body {
     margin: 0px;
 }
 
+/*Nav bar positioning*/
 nav {
     display: flex;
     background: black;
@@ -12,9 +13,6 @@ nav {
     font-size: 15px;
 }
 
-nav h1 {
-    margin: 0;
-}
 
 nav img {
     width: 130px;
@@ -28,7 +26,7 @@ nav ul {
     padding: 0px;
 }
 
-#products li {
+#products li div:nth-child(1){
     display: flex;
     align-items: center;
     color: white;
@@ -36,17 +34,22 @@ nav ul {
     margin-right: 22px;
 }
 
-#products li p:nth-child(2){
+#products li div p:nth-child(2){
     margin-left: 3px;
     font-size: 4px;
     font-weight: bold;
 }
 
-#products li:hover{
+#products li div:nth-child(1):hover{
     cursor: pointer;
 }
 
-#products li:nth-child(6) {
+#products li{
+    position: relative;
+}
+
+
+#products li:nth-child(6) div {
     margin-right: 0px;
 }
 
@@ -65,4 +68,26 @@ nav ul {
 
 #other li:nth-child(3) {
     margin-right: 25px;
+}
+
+/*Drop down stylings*/
+#bikesDropDown {
+    position: absolute;
+    height: 300px;
+    width: 800px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    left: -100px;
+    top: 64px;
+    visibility: visible;
+}
+
+#bikesDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 105px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
 }
