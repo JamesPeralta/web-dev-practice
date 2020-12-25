@@ -71,16 +71,21 @@ nav ul {
 }
 
 /*Drop down stylings*/
-#bikesDropDown {
+.modal {
     position: absolute;
     height: 300px;
     width: 800px;
     border-style: solid;
     border-color: black;
     border-width: 2px;
-    left: -100px;
+    border-radius: 5px;
+    display: none;
     top: 64px;
-    visibility: visible;
+}
+
+/*slight adjustment to all dropdown modals for alignment*/
+#bikesDropDown {
+    left: -100px;
 }
 
 #bikesDropDown:before {
@@ -88,6 +93,72 @@ nav ul {
     position: absolute;
     top: -24px;
     left: 105px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
+}
+
+
+#treadDropDown {
+    left: -174px;
+}
+
+#treadDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 190px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
+}
+
+#appDropDown {
+    left: -257px;
+}
+
+#appDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 263px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
+}
+
+#classesDropDown {
+    left: -320px;
+}
+
+#classesDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 340px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
+}
+
+#accessoriesDropDown {
+    left: -418px;
+}
+
+#accessoriesDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 455px;
+    border: 11px solid;
+    border-color: transparent transparent black transparent;
+}
+
+#apparaelDropDown {
+    left: -552px;
+}
+
+#apparaelDropDown:before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    left: 570px;
     border: 11px solid;
     border-color: transparent transparent black transparent;
 }
