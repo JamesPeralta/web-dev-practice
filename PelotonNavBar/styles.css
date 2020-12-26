@@ -72,7 +72,7 @@ nav ul {
 /*Drop down stylings*/
 .modal {
     position: absolute;
-    height: 300px;
+    height: 430px;
     width: 800px;
     border-style: solid;
     border-color: black;
@@ -173,17 +173,83 @@ nav ul {
 }
 
 .leftModal {
-    border-color: black;
-    border-style: solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     width: 70%;
     height: 100%;
+
 }
 
 .rightModal {
-    border-color: black;
-    border-style: solid;
     margin: 0;
     padding: 0;
     height: 100%;
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
 }
+
+#bike {
+    margin-bottom: 20px;
+}
+
+.bikesDropDownList {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    list-style: none;
+    width: 80%;
+}
+
+.bikesDropDownList li {
+    margin-bottom: 17px;
+}
+
+.bikeProduct {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 40px;
+}
+
+.bikeProduct img {
+    margin-right: 37px;
+}
+
+.bikeProduct div {
+    margin-right: 32px;
+}
+
+.bikeProduct div h1 {
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+
+.bikeProduct div p {
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.bikeProduct div div a{
+    margin-right: 15px;
+    font-size: 13px;
+    color: black;
+}
+
+.bikeProduct div div {
+    margin-top: 5px;
+    display: flex;
+    height: 30px;
+}
+
+

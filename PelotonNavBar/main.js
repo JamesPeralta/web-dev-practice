@@ -1,4 +1,5 @@
-$(".products li").click(function () {
+$(".products > li").click(function () {
+    console.log(this);
     let currPress = $(this).find('.modal');
     let otherModals = $(".modal")
     for (const element of otherModals) {
