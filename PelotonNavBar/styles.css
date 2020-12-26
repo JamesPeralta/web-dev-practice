@@ -26,7 +26,7 @@ nav ul {
     padding: 0px;
 }
 
-#products li div:nth-child(1){
+.middleButtons{
     display: flex;
     align-items: center;
     color: white;
@@ -34,23 +34,22 @@ nav ul {
     margin-right: 22px;
 }
 
-#products li div p:nth-child(2){
+.middleButtons:hover{
+    cursor: pointer;
+}
+
+#lastButton {
+    margin-right: 0px;
+}
+
+.carot{
     margin-left: 3px;
     font-size: 4px;
     font-weight: bold;
 }
 
-#products li div:nth-child(1):hover{
-    cursor: pointer;
-}
-
-#products li{
+.products li{
     position: relative;
-}
-
-
-#products li:nth-child(6) div {
-    margin-right: 0px;
 }
 
 #other li button {
@@ -66,7 +65,7 @@ nav ul {
     width: 27px;
 }
 
-#other li:nth-child(3) {
+.otherButtons:nth-child(3) {
     margin-right: 25px;
 }
 
@@ -93,6 +92,7 @@ nav ul {
     position: absolute;
     top: -24px;
     left: 105px;
+    z-index: -1;
     border: 11px solid;
     border-color: transparent transparent black transparent;
 }
@@ -161,4 +161,29 @@ nav ul {
     left: 570px;
     border: 11px solid;
     border-color: transparent transparent black transparent;
+}
+
+/* Bike Modal content*/
+.modalContent {
+    display: flex;
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.leftModal {
+    border-color: black;
+    border-style: solid;
+    width: 70%;
+    height: 100%;
+}
+
+.rightModal {
+    border-color: black;
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 30%;
 }
