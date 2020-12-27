@@ -1,0 +1,34 @@
+nav {
+    background-color: #006bb6;
+    width: 100%;
+    height: 40px;
+}
+
+.otherPages {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.otherPages li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: white;
+    width: 130px;
+}
+
+.otherPages li:hover {
+    background-color: chocolate;
+}
+
+.otherPages li p {
+    margin: 0;
+}
+
+.otherPages li a {
+    color: #E6E6FA;
+    text-decoration: none;
+}
