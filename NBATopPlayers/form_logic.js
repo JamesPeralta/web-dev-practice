@@ -25,11 +25,6 @@ $(document).keypress(
         }
     });
 
-$("#submitButton").click(function (){
-        alert("STFU");
-    }
-);
-
 $("#submitButton").hover(function () {
     $(this).css({
         backgroundColor: "blue"
@@ -37,3 +32,10 @@ $("#submitButton").hover(function () {
     $(this).css({
         backgroundColor: "green"
     })});
+
+$(".otherPages li").click(function (){
+    let foundit = $(this).find("a").attr("href");
+    if (!(foundit === "#")) {
+        $("location").attr("href", foundit);
+    }
+});

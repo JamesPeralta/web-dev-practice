@@ -23,6 +23,7 @@ body {
   border-color: #006bb6;
   border-style: solid;
   width: 600px;
+  margin-top: 50px;
 }
 
 #player-name {
