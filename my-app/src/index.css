@@ -31,8 +31,22 @@
     margin-bottom: 8px;
 }
 
-.post-stats > img {
+.post-stats img {
     width: 25px;
+}
+
+.post-stats
+
+.post-stats div > img {
+    width: 25px;
+}
+
+.stat {
+    display: flex;
+}
+
+.stat p {
+    margin-left: 10px;
 }
 
 .news-feed {
