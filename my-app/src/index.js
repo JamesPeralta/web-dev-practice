@@ -18,6 +18,10 @@ class NewsFeed extends React.Component {
     }
 }
 
+function consoleOut() {
+    console.log("Hello");
+}
+
 class SocialCard extends React.Component {
     render() {
         return (
@@ -33,10 +37,10 @@ class SocialCard extends React.Component {
                         minutes to pair our yummy cookies with crunchy pretzels for an easy treat friends & family
                         will love.</p></div>
                     <div className="post-stats">
-                        <img src="./speech-bubble.svg" alt="?"/>
-                        <img src="./retweet.svg" alt="?"/>
-                        <img src="./heart.svg" alt="?"/>
-                        <img src="./send.svg" alt="?"/>
+                        <img src="./speech-bubble.svg" alt="?" onClick={consoleOut}/>
+                        <img src="./retweet.svg" alt="?" onClick={consoleOut}/>
+                        <img src="./heart.svg" alt="?" onClick={consoleOut}/>
+                        <img src="./send.svg" alt="?" onClick={consoleOut}/>
                     </div>
                 </div>
             </div>);
