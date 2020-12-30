@@ -4,28 +4,30 @@ import './index.css';
 
 class NewsFeed extends React.Component {
     render() {
+        let poster = [{profile: "./anon-profile.png", name: "James Peralta", handle: "@jamesperalta", posted: "1h"},
+                      {profile: "./anon-profile.png", name: "Natu", handle: "@natuo09", posted: "1h"},
+                      {profile: "./anon-profile.png", name: "Issack", handle: "@johnissack", posted: "1h"},
+                      {profile: "./anon-profile.png", name: "Patrick", handle: "@patpaj", posted: "1h"}];
+
         return (
             <div className="news-feed">
                 <h1>Bootleg Twitter Feed</h1>
-                <SocialCard/>
-                <SocialCard/>
-                <SocialCard/>
+                {poster.map(function (item) {
+                    return <SocialCard data={item}/>;})}
             </div>);
     }
 }
 
 class SocialCard extends React.Component {
     render() {
-        let poster = {profile: "./anon-profile.png", name: "James Peralta", handle: "@jamesperalta", posted: "1h"};
-
         return (
             <div className="full-card">
-                <div className="profile-pic"><img src={poster.profile} alt="anon profile"/></div>
+                <div className="profile-pic"><img src={this.props.data.profile} alt="anon profile"/></div>
                 <div className="post-content">
                     <div className="poster-details">
-                        <p><strong>{poster.name}</strong></p>
-                        <p>{poster.handle}</p>
-                        <p>{poster.posted}</p>
+                        <p><strong>{this.props.data.name}</strong></p>
+                        <p>{this.props.data.handle}</p>
+                        <p>{this.props.data.posted}</p>
                     </div>
                     <div className="content"><p>Forget Reindeer Games, it’s an OREO Reindeer Party! It only takes 15
                         minutes to pair our yummy cookies with crunchy pretzels for an easy treat friends & family
