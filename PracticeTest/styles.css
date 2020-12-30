@@ -1,0 +1,34 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #006bb6;
+}
+
+.full-form {
+    background-color: #E6E6FA;
+    width: 50%;
+}
+
+.full-form > h3 {
+    margin: 15px;
+    color: chocolate;
+}
+
+.full-form form{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+#address {
+    resize: none;
+}
+
+#comments {
+    resize: none;
+}
+
+.full-form form > input, select, textarea{
+    margin-bottom: 10px;
+}
