@@ -5,7 +5,7 @@ import PostStats from "./poststats";
 function SocialCard(props){
     return (
         <div className="full-card">
-            <div className="profile-pic"><img src={props.data.profile} alt="anon profile"/></div>
+            <div className="profile-pic"><img src={props.data.profile ? props.data.profile : "./anon-profile.png"} alt="anon profile"/></div>
             <div className="post-content">
                 <PostAuthor authorDetails={props.data}/>
                 <PostContent/>
