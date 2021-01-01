@@ -8,7 +8,7 @@ function SocialCard(props){
             <div className="profile-pic"><img src={props.data.profile ? props.data.profile : "./anon-profile.png"} alt="anon profile"/></div>
             <div className="post-content">
                 <PostAuthor authorDetails={props.data}/>
-                <PostContent/>
+                <PostContent content={props.data.content}/>
                 <PostStats/>
             </div>
         </div>
@@ -25,12 +25,10 @@ function PostAuthor(props) {
     );
 }
 
-function PostContent() {
+function PostContent(props) {
     return (
         <div className="content">
-            <p>Forget Reindeer Games, it’s an OREO Reindeer Party! It only takes 15
-            minutes to pair our yummy cookies with crunchy pretzels for an easy treat friends & family
-            will love.</p>
+            <p>{props.content}</p>
         </div>
     );
 }

@@ -14,7 +14,9 @@ class NewsFeed extends React.Component {
     async componentDidMount() {
         let newFetch = [];
         for (let i = 0; i < 5; i++){
-            newFetch.push(await this.processUser())
+            let newUser = await this.processUser();
+            let newContent = await this.getRandomContent();
+            newFetch.push({...newUser, ...newContent});
         }
 
         this.setState({Users: newFetch});
@@ -33,17 +35,29 @@ class NewsFeed extends React.Component {
                 return {profile: profilePic, name: usersName, handle: handle, posted: posted}
             })
             .catch(function (error) {
-                console.log(error);
                 return {}
             });
 
         return newUser;
     }
 
+    async getRandomContent() {
+        let newContent = await axios.get("https://v2.jokeapi.dev/joke/Any?type=single")
+            .then(function (response) {
+                return {content: response.data.joke};
+            })
+            .catch(function (error){
+                return {}
+            });
+
+        return newContent;
+    }
+
     render() {
         return (
             <div className="news-feed">
-                <h1>Bootleg Twitter Feed</h1>
+                <h1>Random Joke Feed</h1>
+                <h5>By: James Peralta</h5>
                 {this.state.Users.map(item => (<SocialCard key={item.handle} data={item}/>))}
             </div>);
     }
