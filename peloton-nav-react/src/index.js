@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import ProductList from "./productmodal";
 
 ReactDOM.render(
     <div>
@@ -10,10 +11,12 @@ ReactDOM.render(
 );
 
 function PelotonNav(props) {
+    let products = ["BIKES", "TREAD", "APP", "CLASSES", "ACCESSORIES", "APPAREL"];
+
     return (
         <div className="peloton-nav">
             <Logo/>
-            <ProductList/>
+            <ProductList products={products}/>
             <OtherItems/>
         </div>
     );
@@ -21,30 +24,21 @@ function PelotonNav(props) {
 
 function Logo(props) {
     return (
-        <div>
+        <div className="logo">
             <img src="./peloton-logo.svg" alt="peloton"/>
         </div>
     );
 }
 
-function ProductList(props) {
-    return (
-        <ul className="products-list">
-            <li>Bikes</li>
-            <li>Tread</li>
-            <li>App</li>
-            <li>Classes</li>
-        </ul>
-    );
-}
-
 function OtherItems(props) {
     return (
-        <ul className="other-items">
-            <li><img src="./location.svg" alt="#"/></li>
-            <li><img src="./user.svg" alt="#"/></li>
-            <li><img src="./shopping-cart.svg" alt="#"/></li>
-        </ul>
+        <div>
+            <ul className="other-items">
+                <li><img src="./location.svg" alt="#"/></li>
+                <li><img src="./user.svg" alt="#"/></li>
+                <li><img src="./shopping-cart.svg" alt="#"/></li>
+            </ul>
+        </div>
     );
 }
 

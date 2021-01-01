@@ -1,0 +1,27 @@
+.products-list {
+    display: flex;
+    padding: 0;
+    list-style: none;
+}
+
+.products-list{
+    margin: 0;
+    height: 100%;
+}
+
+.carot {
+    margin-left: 3px;
+    font-size: 6px;
+    font-weight: bold;
+}
+
+.products-list li{
+    display: flex;
+    color: white;
+    margin: 0px 14px;
+    align-items: center;
+}
+
+.products-list li:hover {
+    color: gray;
+}

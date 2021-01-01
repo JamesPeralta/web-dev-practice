@@ -24,30 +24,28 @@ code {
   width: 100%;
 }
 
-.peloton-nav p {
-  margin: 0;
+.logo {
+  height: 100%;
 }
 
 .peloton-nav img {
   height: 100%;
 }
 
-.products-list {
-  display: flex;
-}
-
-.products-list li{
-  color: white;
-  list-style: none;
-}
-
 .other-items {
   display: flex;
   list-style: none;
   color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 .other-items li {
   /*border-style: solid;*/
   width: 50px;
+}
+
+.other-items li img {
+  width: 30px;
 }
