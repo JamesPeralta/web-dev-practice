@@ -13,9 +13,14 @@ class NewsFeed extends React.Component {
 
     async componentDidMount() {
         let newFetch = [];
-        for (let i = 0; i < 5; i++){
+
+        while (newFetch.length < 5) {
             let newUser = await this.processUser();
             let newContent = await this.getRandomContent();
+            if (!newUser.name || !newUser.profile) {
+                continue
+            }
+
             newFetch.push({...newUser, ...newContent});
         }
 
@@ -30,7 +35,7 @@ class NewsFeed extends React.Component {
                 let nameObj = response.data.results[0].name;
                 let usersName = nameObj.first + " " + nameObj.last;
                 let handle = "@" + nameObj.last + nameObj.first;
-                let posted = "1h";
+                let posted = parseInt((Math.random() * 100)) % 24 + "h ago";
 
                 return {profile: profilePic, name: usersName, handle: handle, posted: posted}
             })
