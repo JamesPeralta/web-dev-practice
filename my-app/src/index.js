@@ -7,7 +7,10 @@ const axios = require('axios');
 class NewsFeed extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {Users: Array()}
+        this.state = {
+            Users: Array(),
+            isLoading: true
+        }
         this.processUser();
     }
 
@@ -24,11 +27,14 @@ class NewsFeed extends React.Component {
             newFetch.push({...newUser, ...newContent});
         }
 
-        this.setState({Users: newFetch});
+        this.setState({
+            Users: newFetch,
+            isLoading: false
+        });
     }
 
-    async processUser() {
-        let newUser = await axios.get('https://randomuser.me/api/')
+    processUser() {
+        return axios.get('https://randomuser.me/api/')
             .then(function (response) {
                 let profilePic = response.data.results[0].picture.medium;
 
@@ -42,28 +48,29 @@ class NewsFeed extends React.Component {
             .catch(function (error) {
                 return {}
             });
-
-        return newUser;
     }
 
-    async getRandomContent() {
-        let newContent = await axios.get("https://v2.jokeapi.dev/joke/Any?type=single")
+    getRandomContent() {
+        return axios.get("https://v2.jokeapi.dev/joke/Any?type=single")
             .then(function (response) {
                 return {content: response.data.joke};
             })
             .catch(function (error){
                 return {}
             });
-
-        return newContent;
     }
 
     render() {
+        let newsFeed = (<h3>News Feed is Loading...</h3>);
+        if (!this.state.isLoading) {
+            newsFeed = this.state.Users.map(item => (<SocialCard key={item.handle} data={item}/>));
+        }
+
         return (
             <div className="news-feed">
                 <h1>Random Joke Feed</h1>
                 <h5>By: James Peralta</h5>
-                {this.state.Users.map(item => (<SocialCard key={item.handle} data={item}/>))}
+                {newsFeed}
             </div>);
     }
 }
