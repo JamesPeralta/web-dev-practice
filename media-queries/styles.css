@@ -1,0 +1,21 @@
+body {
+    color: red;
+}
+
+@media all and (max-width: 400px) {
+    body {
+        color: blue
+    }
+}
+
+@media all and (min-width: 400px) and (max-width: 600px){
+    body {
+        color: pink;
+    }
+}
+
+@media all and (min-width: 601px) {
+    body {
+        color: chartreuse;
+    }
+}
