@@ -15,13 +15,9 @@
     font-weight: bold;
 }
 
-.products-list li{
+.myListItem{
     display: flex;
     color: white;
     margin: 0px 14px;
     align-items: center;
-}
-
-.products-list li:hover {
-    color: gray;
 }
