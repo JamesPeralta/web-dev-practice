@@ -4,8 +4,10 @@ import ProductList from "./ProductList";
 import OtherItems from "./OtherItems";
 
 function PelotonNav(props) {
-    let products = ["BIKES", "TREAD", "APP", "CLASSES", "ACCESSORIES", "APPAREL"];
-    const [openModal, setOpenModal] = useState("BIKES");
+    // Contain JSON Object of the data here
+    // let products = ["BIKES", "TREAD", "APP", "CLASSES", "ACCESSORIES", "APPAREL"];
+    let products = ["BIKES", "TREAD", "APP"];
+    const [openModal, setOpenModal] = useState("");
 
     const handleClick = (item) => {
         if (item === openModal) {

@@ -18,7 +18,8 @@ function ProductElement(props) {
     )
 
     return (
-        <div className="myListItem">
+        <div className="myListItem" style={{
+        }}>
             <p>{props.item}</p>
             <p className="carot">╲╱</p>
             {props.item === props.openModal ? modal: null}
