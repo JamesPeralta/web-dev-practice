@@ -14,10 +14,26 @@ function Nav() {
                 margin: 0,
                 padding: 0
             }}>
-                <li><Link to="/home" style={removeUnd}><NavTab name="Home"/></Link></li>
-                <li><Link to="/about" style={removeUnd}><NavTab name="About"/></Link></li>
-                <li><Link to="/contactme" style={removeUnd}><NavTab name="Contact Me"/></Link></li>
-                <li><Link to="/resume" style={removeUnd}><NavTab name="Resume"/></Link></li>
+                <li>
+                    <Link to="/home" style={removeUnd}>
+                        <NavTab name="Home"/>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/about" style={removeUnd}>
+                        <NavTab name="About"/>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/contactme" style={removeUnd}>
+                        <NavTab name="Contact Me"/>
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/resume" style={removeUnd}>
+                        <NavTab name="Resume"/>
+                    </Link>
+                </li>
             </ul>
         </nav>
     )
