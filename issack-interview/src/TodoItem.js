@@ -2,7 +2,10 @@ import React from "react"
 
 function TodoItem(props){
     return (
-        <p onClick={event => (fds)}>{props.itemName}</p>
+        <div style={{display: "flex"}}>
+            <p>{props.itemName}</p>
+            <button onClick={() => props.handleRemove(props.id)}>Remove</button>
+        </div>
     )
 }
 
