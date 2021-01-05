@@ -1,21 +1,7 @@
 import React from "react";
+import ProductModal from "./components/ProductModal";
 
 function ProductElement(props) {
-    const myStyles = {
-        position: "absolute",
-        borderStyle: "solid",
-        borderColor: "black",
-        top: 65,
-        left: 325,
-        width: 600,
-        height: 500,
-    }
-
-    const modal = (
-        <div style={myStyles}>
-            <h1 style={{color: "black"}}>{props.item}</h1>
-        </div>
-    )
     const {hoverIn, hoverOut} = props.handlers;
 
     return (
@@ -24,7 +10,7 @@ function ProductElement(props) {
         }} onMouseOver={() => hoverIn(props.item)} onMouseOut={() => hoverOut(props.item)}>
             <p>{props.item}</p>
             <p className="carot">╲╱</p>
-            {props.item === props.openModal ? modal: null}
+            {props.item === props.openModal ? <ProductModal item={props.item}/>: null}
         </div>
     )
 }

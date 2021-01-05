@@ -5,7 +5,7 @@ import OtherItems from "./OtherItems";
 
 function PelotonNav() {
     let products = ["BIKES", "TREAD", "APP", "CLASSES", "ACCESSORIES", "APPAREL"];
-    const [openModal, setOpenModal] = useState("");
+    const [openModal, setOpenModal] = useState("BIKES");
     const [hoveredModal, setHoveredModal] = useState("");
     const [showProduct, setShowProducts] = useState(true);
     const maxProductWidth = 1000;
