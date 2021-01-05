@@ -6,8 +6,14 @@ function ProductList(props) {
     return (
         <div>
             <ul className="products-list">
-                {props.products.map(item => (
-                    <li onClick={() => props.handleClick(item)}><ProductElement item={item} openModal={props.openModel}/></li>
+                {props.products.map((item, index) => (
+                    <li key={index} onClick={() => props.handlers.clickHandler(item)}>
+                        <ProductElement
+                            item={item}
+                            openModal={props.openModel}
+                            handlers={props.handlers}
+                            hoveredModal={props.hoveredModal}/>
+                    </li>
                 ))}
             </ul>
         </div>

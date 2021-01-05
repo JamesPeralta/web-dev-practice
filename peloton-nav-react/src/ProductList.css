@@ -20,4 +20,9 @@
     color: white;
     margin: 0px 14px;
     align-items: center;
+    height: 100%;
+}
+
+.myListItem:hover {
+    cursor: pointer;
 }
